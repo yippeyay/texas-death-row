@@ -16,7 +16,7 @@ jobs:
       - name: Install all necessary packages
         run: pip install requests beautifulsoup4 pandas sendgrid
       - name: Run the scraping script
-        run: python tx-execution.py
+        run: python tx-executions.py
       - name: Commit and push and email if content changed
         env:
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
